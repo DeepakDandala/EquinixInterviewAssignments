@@ -51,8 +51,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                14,
-                2,
+                42,
+                5,
                 6,
                 0,
                 0
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 22) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 53) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
-                2
+                6,
+                5
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 11) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   1
+                   0,
+                   2
                ],
                backgroundColor: [
                 "#00B000",
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Equinix RestAssured Assignment</td>
                           <td>1</td>
-                        <td>04 Feb 2023, 19:11</td>
+                        <td>06 Feb 2023, 02:50</td>
           </tr>
         </tbody>
       </table>
@@ -325,63 +325,63 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="file-src-test-java-features-GenerateOTP-feature.html">Verify the generate OTP API</a></td>
         
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >4</td>
         <td  class="failed"    >2</td>
-        <td class="total">3</td>
-        <td      class="passed"    >6</td>
+        <td class="total">6</td>
+        <td      class="passed"    >24</td>
         <td      class="failed"    >2</td>
         <td     class="skipped"   >6</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">14</td>
-        <td class="duration" data-value="4937213700">4s 937ms</td>
+        <td class="total">32</td>
+        <td class="duration" data-value="3231773700">3s 231ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="file-src-test-java-features-GetStates-feature.html">Verify the get states API</a></td>
         
         <td  class="passed"    >2</td>
+        <td  class="failed"    >3</td>
+        <td class="total">5</td>
+        <td      class="passed"    >18</td>
+        <td      class="failed"    >3</td>
         <td >0</td>
-        <td class="total">2</td>
-        <td      class="passed"    >8</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-        <td class="duration" data-value="2862225700">2s 862ms</td>
-        <td class="passed">Passed</td>
+        <td class="total">21</td>
+        <td class="duration" data-value="1712531500">1s 712ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td>2</td>
-            <td>3</td>
-      <td>2</td>
+            <td>6</td>
       <td>5</td>
-      <td>14</td>
-      <td>2</td>
+      <td>11</td>
+      <td>42</td>
+      <td>5</td>
       <td>6</td>
       <td>0</td>
       <td>0</td>
-      <td>22</td>
-      <td class="duration">7s 799ms</td>
+      <td>53</td>
+      <td class="duration">4s 944ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>60.00%</td>
-      <td>40.00%</td>
+            <td>54.55%</td>
+      <td>45.45%</td>
       <td></td>
-      <td>63.64%</td>
-      <td>9.09%</td>
-      <td>27.27%</td>
+      <td>79.25%</td>
+      <td>9.43%</td>
+      <td>11.32%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>40.00%</td>
+      <td>45.45%</td>
     </tr>
   </tfoot>
 </table>

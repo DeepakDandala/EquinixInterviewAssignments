@@ -1,10 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.399 s <<< FAILURE! - in runner.TestRunner
-Send a request with invalid phone number(Verify the generate OTP API)  Time elapsed: 0.795 s  <<< FAILURE!
+Tests run: 11, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 7.539 s <<< FAILURE! - in runner.TestRunner
+Send a request with invalid phone number(Verify the generate OTP API)  Time elapsed: 0.22 s  <<< FAILURE!
 java.lang.AssertionError: Expected 400 but received 200
 
-Send a request with no phone number(Verify the generate OTP API)  Time elapsed: 0.681 s  <<< FAILURE!
+Send a request without phone number(Verify the generate OTP API)  Time elapsed: 0.195 s  <<< FAILURE!
 java.lang.AssertionError: Expected 400 but received 500
+
+Send a request to the get states API without accept header(Verify the get states API)  Time elapsed: 0.133 s  <<< FAILURE!
+java.lang.AssertionError: Expected 400 but received 200
+
+Send a request to the get states API without Accept-Language header(Verify the get states API)  Time elapsed: 0.111 s  <<< FAILURE!
+java.lang.AssertionError: Expected 400 but received 200
+
+Send a request to the get states API with invalid header(Verify the get states API)  Time elapsed: 0.108 s  <<< FAILURE!
+java.lang.AssertionError: Expected 400 but received 200
 
