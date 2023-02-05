@@ -1,0 +1,4 @@
+request
+io.restassured.internal.RequestSpecificationImpl@643d2dae
+response
+io.restassured.internal.ValidatableResponseImpl@70d63e05
